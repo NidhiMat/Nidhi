@@ -1,0 +1,6 @@
+module Pods_Lutong_Bahay {
+  umbrella header "Pods-Lutong Bahay-umbrella.h"
+
+  export *
+  module * { export * }
+}

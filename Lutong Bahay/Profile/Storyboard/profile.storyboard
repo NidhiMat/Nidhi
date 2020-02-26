@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cabin-Regular.ttf">
+            <string>Cabin-Regular</string>
+        </array>
+        <array key="Cabin-SemiBold.ttf">
+            <string>Cabin-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Profile Setting View Controller-->
+        <scene sceneID="kKE-LU-rIg">
+            <objects>
+                <viewController storyboardIdentifier="VC_LBProfileSetting" id="cXg-Rm-g1Q" customClass="LBProfileSettingViewController" customModule="Lutong_Bahay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gNP-PP-alt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fk2-aV-EQs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuW-Pr-Oz6" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <color key="backgroundColor" red="0.62745098039215685" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="SL7-7r-Q4S"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEx-bM-ERi" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMB-AQ-10u" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="27" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="KWx-Mz-IKF"/>
+                                                    <constraint firstAttribute="width" constant="24" id="QeE-JB-OgJ"/>
+                                                </constraints>
+                                                <state key="normal" image="arrow Back"/>
+                                                <connections>
+                                                    <action selector="btnBack:" destination="cXg-Rm-g1Q" eventType="touchUpInside" id="0DS-L9-aok"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqr-FF-mbQ" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="165" y="25" width="84" height="29.5"/>
+                                                <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Zqr-FF-mbQ" firstAttribute="centerX" secondItem="xEx-bM-ERi" secondAttribute="centerX" id="Nos-aB-qLq"/>
+                                            <constraint firstAttribute="height" constant="72" id="QUY-kR-L5P"/>
+                                            <constraint firstItem="Zqr-FF-mbQ" firstAttribute="top" secondItem="xEx-bM-ERi" secondAttribute="top" constant="25" id="T0d-8t-gQb"/>
+                                            <constraint firstItem="KMB-AQ-10u" firstAttribute="top" secondItem="xEx-bM-ERi" secondAttribute="top" constant="27" id="UB0-Zi-LJ6"/>
+                                            <constraint firstItem="KMB-AQ-10u" firstAttribute="leading" secondItem="xEx-bM-ERi" secondAttribute="leading" constant="24" id="zN9-wO-0Nx"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L7U-6f-yhj">
+                                        <rect key="frame" x="0.0" y="116" width="414" height="746"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell_profileInboxCell" rowHeight="63" id="nQE-JR-Nya" customClass="profileSettingCell" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="63"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nQE-JR-Nya" id="Yul-KF-IMR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="cXg-Rm-g1Q" id="nzP-aV-U3Z"/>
+                                            <outlet property="delegate" destination="cXg-Rm-g1Q" id="3DM-9r-8gH"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xEx-bM-ERi" secondAttribute="trailing" id="25A-rq-Gos"/>
+                                    <constraint firstItem="uuW-Pr-Oz6" firstAttribute="leading" secondItem="fk2-aV-EQs" secondAttribute="leading" id="B80-kH-sa3"/>
+                                    <constraint firstItem="L7U-6f-yhj" firstAttribute="leading" secondItem="fk2-aV-EQs" secondAttribute="leading" id="Jtf-mH-N1n"/>
+                                    <constraint firstItem="uuW-Pr-Oz6" firstAttribute="top" secondItem="fk2-aV-EQs" secondAttribute="top" id="K0D-Rx-4Pl"/>
+                                    <constraint firstAttribute="trailing" secondItem="uuW-Pr-Oz6" secondAttribute="trailing" id="WoL-J6-x4D"/>
+                                    <constraint firstItem="xEx-bM-ERi" firstAttribute="leading" secondItem="fk2-aV-EQs" secondAttribute="leading" id="Yb4-8L-Jqj"/>
+                                    <constraint firstItem="L7U-6f-yhj" firstAttribute="top" secondItem="xEx-bM-ERi" secondAttribute="bottom" id="e0l-Ws-TBp"/>
+                                    <constraint firstAttribute="trailing" secondItem="L7U-6f-yhj" secondAttribute="trailing" id="ehs-l6-9hP"/>
+                                    <constraint firstItem="xEx-bM-ERi" firstAttribute="top" secondItem="uuW-Pr-Oz6" secondAttribute="bottom" id="mJs-yG-LvG"/>
+                                    <constraint firstAttribute="bottom" secondItem="L7U-6f-yhj" secondAttribute="bottom" id="npw-bl-Vyr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fk2-aV-EQs" firstAttribute="top" secondItem="gNP-PP-alt" secondAttribute="top" id="18h-Fz-7XA"/>
+                            <constraint firstItem="fk2-aV-EQs" firstAttribute="leading" secondItem="gNP-PP-alt" secondAttribute="leading" id="Q58-BE-I0t"/>
+                            <constraint firstItem="KJ4-AJ-pfC" firstAttribute="bottom" secondItem="fk2-aV-EQs" secondAttribute="bottom" id="XPb-4N-JgU"/>
+                            <constraint firstAttribute="trailing" secondItem="fk2-aV-EQs" secondAttribute="trailing" id="jEg-OF-mZo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KJ4-AJ-pfC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Jo-YI-ktO"/>
+                    <connections>
+                        <outlet property="LBProfileSettingTable" destination="L7U-6f-yhj" id="Oxh-Ve-rhr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXx-Pa-6BG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913.04347826086962" y="83.705357142857139"/>
+        </scene>
+        <!--Profile Favorites View Controller-->
+        <scene sceneID="rGq-1V-oiH">
+            <objects>
+                <viewController storyboardIdentifier="VC_LBProfileFavorites" id="9Av-6m-Nrh" customClass="LBProfileFavoritesViewController" customModule="Lutong_Bahay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3vy-EX-XUf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EvO-DD-RBj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5t-3A-HkT" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <color key="backgroundColor" red="0.62745098039215685" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="FgT-nt-MbY"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2n-2C-f0b" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hv-L9-w2e" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="27" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="EkW-SX-Khc"/>
+                                                    <constraint firstAttribute="width" constant="24" id="eIr-Xm-7mD"/>
+                                                </constraints>
+                                                <state key="normal" image="arrow Back"/>
+                                                <connections>
+                                                    <action selector="btnBack:" destination="9Av-6m-Nrh" eventType="touchUpInside" id="SpS-RZ-VRl"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbK-SB-7FJ" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="160.5" y="24" width="93" height="30"/>
+                                                <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="0hv-L9-w2e" firstAttribute="leading" secondItem="R2n-2C-f0b" secondAttribute="leading" constant="24" id="6Nq-xt-r6H"/>
+                                            <constraint firstItem="DbK-SB-7FJ" firstAttribute="centerX" secondItem="R2n-2C-f0b" secondAttribute="centerX" id="GzQ-qw-Zav"/>
+                                            <constraint firstAttribute="height" constant="72" id="fKE-iu-NCS"/>
+                                            <constraint firstItem="DbK-SB-7FJ" firstAttribute="centerY" secondItem="0hv-L9-w2e" secondAttribute="centerY" id="oO9-Kh-pIL"/>
+                                            <constraint firstItem="0hv-L9-w2e" firstAttribute="top" secondItem="R2n-2C-f0b" secondAttribute="top" constant="27" id="q04-yV-PBg"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="80I-P8-MXW">
+                                        <rect key="frame" x="0.0" y="116" width="414" height="746"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell_profileFavoritesCell" rowHeight="182" id="bEu-VW-tNh" customClass="profileFavoritesCell" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="182"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bEu-VW-tNh" id="Ct3-wl-Yqg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="182"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="9Av-6m-Nrh" id="4Tu-G3-7cA"/>
+                                            <outlet property="delegate" destination="9Av-6m-Nrh" id="ytk-GJ-bfn"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="80I-P8-MXW" secondAttribute="trailing" id="GCa-dV-QBM"/>
+                                    <constraint firstItem="l5t-3A-HkT" firstAttribute="leading" secondItem="EvO-DD-RBj" secondAttribute="leading" id="Gkc-2G-6lP"/>
+                                    <constraint firstItem="l5t-3A-HkT" firstAttribute="top" secondItem="EvO-DD-RBj" secondAttribute="top" id="LcY-ig-Niq"/>
+                                    <constraint firstItem="80I-P8-MXW" firstAttribute="top" secondItem="R2n-2C-f0b" secondAttribute="bottom" id="OPM-5R-BHl"/>
+                                    <constraint firstItem="R2n-2C-f0b" firstAttribute="top" secondItem="l5t-3A-HkT" secondAttribute="bottom" id="Pkw-ja-GTk"/>
+                                    <constraint firstAttribute="bottom" secondItem="80I-P8-MXW" secondAttribute="bottom" id="RxB-wi-rjz"/>
+                                    <constraint firstItem="80I-P8-MXW" firstAttribute="leading" secondItem="EvO-DD-RBj" secondAttribute="leading" id="i2p-Dy-dMR"/>
+                                    <constraint firstAttribute="trailing" secondItem="l5t-3A-HkT" secondAttribute="trailing" id="nbk-oP-WIv"/>
+                                    <constraint firstAttribute="trailing" secondItem="R2n-2C-f0b" secondAttribute="trailing" id="xaI-8S-6JO"/>
+                                    <constraint firstItem="R2n-2C-f0b" firstAttribute="leading" secondItem="EvO-DD-RBj" secondAttribute="leading" id="zxW-DR-JfT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EvO-DD-RBj" firstAttribute="top" secondItem="3vy-EX-XUf" secondAttribute="top" id="a8w-0m-SWp"/>
+                            <constraint firstItem="EvO-DD-RBj" firstAttribute="leading" secondItem="3vy-EX-XUf" secondAttribute="leading" id="fhY-hF-kPF"/>
+                            <constraint firstAttribute="trailing" secondItem="EvO-DD-RBj" secondAttribute="trailing" id="quu-eq-g3g"/>
+                            <constraint firstItem="REb-hS-bPO" firstAttribute="bottom" secondItem="EvO-DD-RBj" secondAttribute="bottom" id="rHc-0N-dyM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="REb-hS-bPO"/>
+                    </view>
+                    <connections>
+                        <outlet property="LBProfileFavoritesTable" destination="80I-P8-MXW" id="zGo-RL-EUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oqv-9w-Odv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1721.7391304347827" y="83.705357142857139"/>
+        </scene>
+        <!--Profile Inbox View Controller-->
+        <scene sceneID="TXs-Ab-39k">
+            <objects>
+                <viewController storyboardIdentifier="VC_LBProfileInbox" id="Aha-TM-fLR" customClass="LBProfileInboxViewController" customModule="Lutong_Bahay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aSw-Q6-8wW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBo-Cy-9ov">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-PB-Wrb" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6L-kQ-rE3" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="27" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="AAJ-r1-Avi"/>
+                                                    <constraint firstAttribute="height" constant="24" id="aUI-Ok-W08"/>
+                                                </constraints>
+                                                <state key="normal" image="arrow Back"/>
+                                                <connections>
+                                                    <action selector="btnBack:" destination="Aha-TM-fLR" eventType="touchUpInside" id="1Pi-eQ-1eM"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inbox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edz-Ff-y32" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="178" y="24" width="58" height="30"/>
+                                                <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="x6L-kQ-rE3" firstAttribute="leading" secondItem="WAP-PB-Wrb" secondAttribute="leading" constant="24" id="EcF-gH-7yA"/>
+                                            <constraint firstItem="Edz-Ff-y32" firstAttribute="centerX" secondItem="WAP-PB-Wrb" secondAttribute="centerX" id="LAj-qp-kxv"/>
+                                            <constraint firstItem="x6L-kQ-rE3" firstAttribute="top" secondItem="WAP-PB-Wrb" secondAttribute="top" constant="27" id="LXQ-Hq-W9P"/>
+                                            <constraint firstItem="Edz-Ff-y32" firstAttribute="centerY" secondItem="x6L-kQ-rE3" secondAttribute="centerY" id="YNw-Z5-o7h"/>
+                                            <constraint firstAttribute="height" constant="72" id="s3o-mO-BQt"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GHp-0R-GXd">
+                                        <rect key="frame" x="0.0" y="116" width="414" height="746"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell_ profileInboxCell" rowHeight="172" id="ueL-QH-Yga" customClass="profileInboxCell" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="172"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ueL-QH-Yga" id="SWN-wW-Ruo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Aha-TM-fLR" id="jx0-ug-M16"/>
+                                            <outlet property="delegate" destination="Aha-TM-fLR" id="noV-xz-dMt"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="WAP-PB-Wrb" firstAttribute="leading" secondItem="RBo-Cy-9ov" secondAttribute="leading" id="07I-Nw-jaB"/>
+                                    <constraint firstItem="GHp-0R-GXd" firstAttribute="leading" secondItem="RBo-Cy-9ov" secondAttribute="leading" id="44s-J5-9zw"/>
+                                    <constraint firstAttribute="trailing" secondItem="GHp-0R-GXd" secondAttribute="trailing" id="O20-me-KES"/>
+                                    <constraint firstItem="GHp-0R-GXd" firstAttribute="top" secondItem="WAP-PB-Wrb" secondAttribute="bottom" id="acf-Pq-LIH"/>
+                                    <constraint firstAttribute="bottom" secondItem="GHp-0R-GXd" secondAttribute="bottom" id="dnV-2g-yY4"/>
+                                    <constraint firstItem="WAP-PB-Wrb" firstAttribute="centerX" secondItem="RBo-Cy-9ov" secondAttribute="centerX" id="ylZ-Kd-evx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcn-BU-6WQ" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.62745098040000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pWf-z0-KRj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RBo-Cy-9ov" firstAttribute="top" secondItem="aSw-Q6-8wW" secondAttribute="top" id="6Db-c9-BO3"/>
+                            <constraint firstItem="WAP-PB-Wrb" firstAttribute="top" secondItem="gcn-BU-6WQ" secondAttribute="bottom" id="75m-2a-fEB"/>
+                            <constraint firstItem="RBo-Cy-9ov" firstAttribute="leading" secondItem="aSw-Q6-8wW" secondAttribute="leading" id="96l-wz-KL3"/>
+                            <constraint firstItem="mug-0L-MTv" firstAttribute="bottom" secondItem="RBo-Cy-9ov" secondAttribute="bottom" id="WFm-9f-DWV"/>
+                            <constraint firstItem="gcn-BU-6WQ" firstAttribute="top" secondItem="aSw-Q6-8wW" secondAttribute="top" id="ZKh-wV-bon"/>
+                            <constraint firstAttribute="trailing" secondItem="RBo-Cy-9ov" secondAttribute="trailing" id="cBy-Od-3vc"/>
+                            <constraint firstItem="gcn-BU-6WQ" firstAttribute="leading" secondItem="mug-0L-MTv" secondAttribute="leading" id="jSo-gk-bgd"/>
+                            <constraint firstAttribute="trailing" secondItem="gcn-BU-6WQ" secondAttribute="trailing" id="xI1-mb-blA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mug-0L-MTv"/>
+                    </view>
+                    <connections>
+                        <outlet property="LBProfileInboxTable" destination="GHp-0R-GXd" id="Ucr-3i-cdz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jku-fD-ltp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2502.898550724638" y="83.705357142857139"/>
+        </scene>
+        <!--Profile Message View Controller-->
+        <scene sceneID="myn-3N-nJK">
+            <objects>
+                <viewController storyboardIdentifier="VC_LBProfileMessage" id="0P4-ry-RDa" customClass="LBProfileMessageViewController" customModule="Lutong_Bahay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="moQ-1k-j8w" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MV-Y5-jNU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVl-gm-L3A" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <color key="backgroundColor" red="0.62745098040000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="X7r-6I-nn5"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7AJ-BS-djR" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKk-tN-QuW" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="27" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="gAu-Am-twg"/>
+                                                    <constraint firstAttribute="width" constant="24" id="prq-ap-wV2"/>
+                                                </constraints>
+                                                <state key="normal" image="arrow Back"/>
+                                                <connections>
+                                                    <action selector="btnBack:" destination="0P4-ry-RDa" eventType="touchUpInside" id="hwk-A3-cvx"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rus-GD-3O3" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="162.5" y="24" width="89" height="30"/>
+                                                <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="rus-GD-3O3" firstAttribute="centerY" secondItem="eKk-tN-QuW" secondAttribute="centerY" id="6il-oK-WVp"/>
+                                            <constraint firstAttribute="height" constant="72" id="IaV-lc-B3a"/>
+                                            <constraint firstItem="eKk-tN-QuW" firstAttribute="leading" secondItem="7AJ-BS-djR" secondAttribute="leading" constant="24" id="TPN-Ga-aSl"/>
+                                            <constraint firstItem="eKk-tN-QuW" firstAttribute="top" secondItem="7AJ-BS-djR" secondAttribute="top" constant="27" id="rHR-Su-1F1"/>
+                                            <constraint firstItem="rus-GD-3O3" firstAttribute="centerX" secondItem="7AJ-BS-djR" secondAttribute="centerX" id="yP0-0s-uw6"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDg-Ec-mz1">
+                                        <rect key="frame" x="0.0" y="116" width="414" height="347"/>
+                                        <subviews>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="p7K-Mp-v4d">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="347"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="0P4-ry-RDa" id="HSK-pU-Jws"/>
+                                                </connections>
+                                            </mapView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="p7K-Mp-v4d" secondAttribute="bottom" id="3kr-eB-Qqz"/>
+                                            <constraint firstAttribute="height" constant="347" id="5Xa-mL-zTB"/>
+                                            <constraint firstItem="p7K-Mp-v4d" firstAttribute="leading" secondItem="QDg-Ec-mz1" secondAttribute="leading" id="UZr-Lz-sU4"/>
+                                            <constraint firstAttribute="trailing" secondItem="p7K-Mp-v4d" secondAttribute="trailing" id="gI3-2a-W5b"/>
+                                            <constraint firstItem="p7K-Mp-v4d" firstAttribute="top" secondItem="QDg-Ec-mz1" secondAttribute="top" id="hBA-px-h8g"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q7W-CZ-xue" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="463" width="414" height="399"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your luto is on the way" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTU-HU-nmz" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="120" y="33" width="174" height="22"/>
+                                                <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 mins away" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pK-ab-gUg" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="156" y="63" width="102" height="22"/>
+                                                <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="18"/>
+                                                <color key="textColor" red="0.4823529411764706" green="0.80000000000000004" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZZ-Wd-vSN" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="107" y="106" width="200" height="29.5"/>
+                                                <string key="text">The server has finished processing your 
+order is now delivering your order. </string>
+                                                <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRB-gd-CnM" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="173.5" width="414" height="52"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qax-Jn-iW2" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="1" width="414" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FZ-ca-8Sv" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                                <rect key="frame" x="143" y="9" width="128" height="32"/>
+                                                                <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="16"/>
+                                                                <state key="normal" title="Show order details">
+                                                                    <color key="titleColor" red="1" green="0.52156862749999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="5FZ-ca-8Sv" firstAttribute="centerY" secondItem="qax-Jn-iW2" secondAttribute="centerY" id="YEQ-Fg-7ry"/>
+                                                            <constraint firstItem="5FZ-ca-8Sv" firstAttribute="centerX" secondItem="qax-Jn-iW2" secondAttribute="centerX" id="xcw-BK-tnY"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="qax-Jn-iW2" firstAttribute="top" secondItem="DRB-gd-CnM" secondAttribute="top" constant="1" id="5yu-Vf-YZu"/>
+                                                    <constraint firstItem="qax-Jn-iW2" firstAttribute="leading" secondItem="DRB-gd-CnM" secondAttribute="leading" id="aaN-gj-vGC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qax-Jn-iW2" secondAttribute="bottom" constant="1" id="mfX-6f-yK8"/>
+                                                    <constraint firstAttribute="height" constant="52" id="o0Y-VL-DTh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qax-Jn-iW2" secondAttribute="trailing" id="rYo-g4-wJn"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="DRB-gd-CnM" firstAttribute="top" secondItem="CZZ-Wd-vSN" secondAttribute="bottom" constant="38" id="1jS-ni-74Z"/>
+                                            <constraint firstItem="MTU-HU-nmz" firstAttribute="top" secondItem="Q7W-CZ-xue" secondAttribute="top" constant="33" id="8Ia-Bc-5hW"/>
+                                            <constraint firstAttribute="trailing" secondItem="DRB-gd-CnM" secondAttribute="trailing" id="9BZ-pB-op9"/>
+                                            <constraint firstItem="CZZ-Wd-vSN" firstAttribute="centerX" secondItem="Q7W-CZ-xue" secondAttribute="centerX" id="CRk-wO-JcT"/>
+                                            <constraint firstItem="MTU-HU-nmz" firstAttribute="centerX" secondItem="Q7W-CZ-xue" secondAttribute="centerX" id="QCE-Pc-mCx"/>
+                                            <constraint firstItem="CZZ-Wd-vSN" firstAttribute="top" secondItem="5pK-ab-gUg" secondAttribute="bottom" constant="21" id="aW8-Za-IrQ"/>
+                                            <constraint firstItem="5pK-ab-gUg" firstAttribute="top" secondItem="MTU-HU-nmz" secondAttribute="bottom" constant="8" id="dWO-zD-j3c"/>
+                                            <constraint firstItem="5pK-ab-gUg" firstAttribute="centerX" secondItem="Q7W-CZ-xue" secondAttribute="centerX" id="sQd-Oi-Vhz"/>
+                                            <constraint firstItem="DRB-gd-CnM" firstAttribute="leading" secondItem="Q7W-CZ-xue" secondAttribute="leading" id="xyj-8y-uPi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="QDg-Ec-mz1" firstAttribute="leading" secondItem="2MV-Y5-jNU" secondAttribute="leading" id="7c6-NV-8Mx"/>
+                                    <constraint firstItem="7AJ-BS-djR" firstAttribute="leading" secondItem="2MV-Y5-jNU" secondAttribute="leading" id="Hdj-5t-76J"/>
+                                    <constraint firstAttribute="trailing" secondItem="QDg-Ec-mz1" secondAttribute="trailing" id="Ld0-s2-q4P"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q7W-CZ-xue" secondAttribute="trailing" id="N2J-wv-Xkh"/>
+                                    <constraint firstItem="VVl-gm-L3A" firstAttribute="leading" secondItem="2MV-Y5-jNU" secondAttribute="leading" id="TY8-sV-eGz"/>
+                                    <constraint firstAttribute="trailing" secondItem="VVl-gm-L3A" secondAttribute="trailing" id="WNS-Ao-ujz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q7W-CZ-xue" secondAttribute="bottom" id="cxM-Rv-MDH"/>
+                                    <constraint firstAttribute="trailing" secondItem="7AJ-BS-djR" secondAttribute="trailing" id="dco-X5-ice"/>
+                                    <constraint firstItem="Q7W-CZ-xue" firstAttribute="top" secondItem="QDg-Ec-mz1" secondAttribute="bottom" id="hcu-pn-6qG"/>
+                                    <constraint firstItem="7AJ-BS-djR" firstAttribute="top" secondItem="VVl-gm-L3A" secondAttribute="bottom" id="jlH-ta-zMK"/>
+                                    <constraint firstItem="Q7W-CZ-xue" firstAttribute="leading" secondItem="2MV-Y5-jNU" secondAttribute="leading" id="kOn-t8-c2R"/>
+                                    <constraint firstItem="QDg-Ec-mz1" firstAttribute="top" secondItem="7AJ-BS-djR" secondAttribute="bottom" id="tMf-U1-eIp"/>
+                                    <constraint firstItem="VVl-gm-L3A" firstAttribute="top" secondItem="2MV-Y5-jNU" secondAttribute="top" id="xoT-eN-Lh5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2MV-Y5-jNU" firstAttribute="top" secondItem="moQ-1k-j8w" secondAttribute="top" id="7aJ-oS-Afr"/>
+                            <constraint firstAttribute="trailing" secondItem="2MV-Y5-jNU" secondAttribute="trailing" id="bBf-uK-fEU"/>
+                            <constraint firstItem="2MV-Y5-jNU" firstAttribute="leading" secondItem="moQ-1k-j8w" secondAttribute="leading" id="kDV-Ca-B3R"/>
+                            <constraint firstItem="kWF-h6-hFg" firstAttribute="bottom" secondItem="2MV-Y5-jNU" secondAttribute="bottom" id="zlp-HQ-8DV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kWF-h6-hFg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIX-4U-iJq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3292.753623188406" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="diz-dR-2ir">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Csh-nH-7JH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b67-ZM-cWf">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cXg-Rm-g1Q" kind="relationship" relationship="rootViewController" id="032-N6-Dzh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0h-Bw-GWh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow Back" width="24" height="24"/>
+    </resources>
+</document>

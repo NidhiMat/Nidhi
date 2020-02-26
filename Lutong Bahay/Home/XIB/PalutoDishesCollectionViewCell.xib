@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.otf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Regular.otf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ltv-MV-sv4" customClass="PalutoDishesCollectionViewCell" customModule="Lutong_Bahay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="257" height="246"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Hf1-q5-1RF">
+                <rect key="frame" x="0.0" y="0.0" width="257" height="246"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eS7-49-7kk" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="257" height="246"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eJL-lM-9WX" customClass="LBImageView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="257" height="110"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="9fr-g3-KcA"/>
+                                    <constraint firstAttribute="width" constant="257" id="oNr-km-ZLa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="leftRight" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pancit Malabon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bB0-Fd-js1">
+                                <rect key="frame" x="17" y="120" width="124" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="WY1-zn-9Zv"/>
+                                    <constraint firstAttribute="height" constant="22" id="lke-u1-v0a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LY0-T5-v5d">
+                                <rect key="frame" x="179" y="121" width="19" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="Vgq-ZQ-EKd"/>
+                                    <constraint firstAttribute="height" constant="22" id="bCn-W4-VMP"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="star"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDb-gm-cgS">
+                                <rect key="frame" x="199" y="123" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="I7O-ol-JIe"/>
+                                    <constraint firstAttribute="width" constant="18" id="WNT-Oa-8up"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Jenny's Pencit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twM-mY-Sw8">
+                                <rect key="frame" x="18" y="138" width="120" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="29G-4b-om7"/>
+                                    <constraint firstAttribute="height" constant="16" id="VS1-GX-Jvu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="11"/>
+                                <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBO-L3-dg7">
+                                <rect key="frame" x="18" y="155" width="61" height="14"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="11"/>
+                                <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Fridays" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9C6-yf-Vhy" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="17" y="188" width="96" height="18"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="2Te-eb-xNC"/>
+                                    <constraint firstAttribute="height" constant="18" id="oQG-cd-PXG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="11"/>
+                                <color key="textColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedRect" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.3 KM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDF-kS-2nc" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="115" y="188" width="42" height="18"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="3dM-D2-sz1"/>
+                                    <constraint firstAttribute="height" constant="18" id="4pu-67-zO1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="11"/>
+                                <color key="textColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedRect" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup Only" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNX-xg-kOX" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="159" y="188" width="82" height="18"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="DD8-UW-Pqs"/>
+                                    <constraint firstAttribute="height" constant="18" id="K0U-rn-QsI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="11"/>
+                                <color key="textColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedRect" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHP 150.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1g-0M-RwM">
+                                <rect key="frame" x="18" y="217" width="76" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="sOm-Rj-pMP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LcV-g5-8j3" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="159" y="217" width="82" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
+                                <state key="normal" title="Pre-Order">
+                                    <color key="titleColor" red="1" green="0.52156862749999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.52156862749999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="u1g-0M-RwM" secondAttribute="trailing" constant="163" id="26i-d7-LKe"/>
+                            <constraint firstItem="LY0-T5-v5d" firstAttribute="leading" secondItem="bB0-Fd-js1" secondAttribute="trailing" constant="38" id="2ld-jp-Ak4"/>
+                            <constraint firstItem="bB0-Fd-js1" firstAttribute="top" secondItem="eJL-lM-9WX" secondAttribute="bottom" constant="10" id="36S-Jt-GRx"/>
+                            <constraint firstAttribute="trailing" secondItem="CNX-xg-kOX" secondAttribute="trailing" constant="16" id="46U-RV-Xz2"/>
+                            <constraint firstItem="bB0-Fd-js1" firstAttribute="leading" secondItem="eS7-49-7kk" secondAttribute="leading" constant="17" id="72O-fw-D7Z"/>
+                            <constraint firstItem="MDF-kS-2nc" firstAttribute="top" secondItem="twM-mY-Sw8" secondAttribute="bottom" constant="34" id="8zw-09-Kb1"/>
+                            <constraint firstAttribute="width" constant="257" id="9jP-wM-Nbr"/>
+                            <constraint firstAttribute="trailing" secondItem="bB0-Fd-js1" secondAttribute="trailing" constant="116" id="E12-ea-vDU"/>
+                            <constraint firstItem="9C6-yf-Vhy" firstAttribute="top" secondItem="yBO-L3-dg7" secondAttribute="bottom" constant="19" id="Eda-TL-f5t"/>
+                            <constraint firstItem="u1g-0M-RwM" firstAttribute="leading" secondItem="eS7-49-7kk" secondAttribute="leading" constant="18" id="QEP-hw-xF9"/>
+                            <constraint firstItem="twM-mY-Sw8" firstAttribute="top" secondItem="eJL-lM-9WX" secondAttribute="bottom" constant="28" id="T95-de-q8N"/>
+                            <constraint firstItem="CNX-xg-kOX" firstAttribute="leading" secondItem="MDF-kS-2nc" secondAttribute="trailing" constant="2" id="TqI-42-2Cg"/>
+                            <constraint firstItem="twM-mY-Sw8" firstAttribute="leading" secondItem="eS7-49-7kk" secondAttribute="leading" constant="18" id="XNf-Tw-X5O"/>
+                            <constraint firstItem="MDF-kS-2nc" firstAttribute="leading" secondItem="9C6-yf-Vhy" secondAttribute="trailing" constant="2" id="aZf-Bk-eP9"/>
+                            <constraint firstItem="yBO-L3-dg7" firstAttribute="leading" secondItem="eS7-49-7kk" secondAttribute="leading" constant="18" id="cTY-gu-V53"/>
+                            <constraint firstItem="fDb-gm-cgS" firstAttribute="leading" secondItem="LY0-T5-v5d" secondAttribute="trailing" constant="1" id="dcM-3j-D5J"/>
+                            <constraint firstItem="LY0-T5-v5d" firstAttribute="top" secondItem="eJL-lM-9WX" secondAttribute="bottom" constant="11" id="e3e-ol-caA"/>
+                            <constraint firstItem="eJL-lM-9WX" firstAttribute="leading" secondItem="eS7-49-7kk" secondAttribute="leading" id="eQk-XY-49a"/>
+                            <constraint firstItem="yBO-L3-dg7" firstAttribute="top" secondItem="twM-mY-Sw8" secondAttribute="bottom" constant="1" id="ehs-uV-Qp3"/>
+                            <constraint firstItem="fDb-gm-cgS" firstAttribute="top" secondItem="eJL-lM-9WX" secondAttribute="bottom" constant="13" id="etr-9t-6oV"/>
+                            <constraint firstItem="LY0-T5-v5d" firstAttribute="leading" secondItem="twM-mY-Sw8" secondAttribute="trailing" constant="41" id="h1s-vT-j6I"/>
+                            <constraint firstItem="CNX-xg-kOX" firstAttribute="top" secondItem="LY0-T5-v5d" secondAttribute="bottom" constant="45" id="i6c-0P-kCh"/>
+                            <constraint firstItem="eJL-lM-9WX" firstAttribute="top" secondItem="eS7-49-7kk" secondAttribute="top" id="jY9-4K-qBZ"/>
+                            <constraint firstAttribute="trailing" secondItem="fDb-gm-cgS" secondAttribute="trailing" constant="40" id="o3c-w0-NBZ"/>
+                            <constraint firstAttribute="height" constant="246" id="rC5-rF-Xh3"/>
+                            <constraint firstItem="9C6-yf-Vhy" firstAttribute="leading" secondItem="eS7-49-7kk" secondAttribute="leading" constant="17" id="tes-wh-Vgs"/>
+                            <constraint firstItem="u1g-0M-RwM" firstAttribute="top" secondItem="9C6-yf-Vhy" secondAttribute="bottom" constant="11" id="w4E-af-TAT"/>
+                            <constraint firstAttribute="trailing" secondItem="yBO-L3-dg7" secondAttribute="trailing" constant="178" id="wo1-Fj-tzy"/>
+                            <constraint firstAttribute="trailing" secondItem="eJL-lM-9WX" secondAttribute="trailing" id="xAP-Ft-YVc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eS7-49-7kk" secondAttribute="bottom" id="BT0-gN-aqP"/>
+                    <constraint firstAttribute="trailing" secondItem="eS7-49-7kk" secondAttribute="trailing" id="LEx-Iu-l34"/>
+                    <constraint firstItem="eS7-49-7kk" firstAttribute="leading" secondItem="Hf1-q5-1RF" secondAttribute="leading" id="Ofw-Md-wpQ"/>
+                    <constraint firstItem="eS7-49-7kk" firstAttribute="top" secondItem="Hf1-q5-1RF" secondAttribute="top" id="kWI-3h-Eal"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="availableLbl" destination="9C6-yf-Vhy" id="gd1-J5-Ks0"/>
+                <outlet property="deliveryTypeLbl" destination="CNX-xg-kOX" id="6RX-jS-Bjd"/>
+                <outlet property="dishImage" destination="eJL-lM-9WX" id="JD7-99-LQD"/>
+                <outlet property="dishName" destination="bB0-Fd-js1" id="sCF-NE-LV6"/>
+                <outlet property="distanceLbl" destination="MDF-kS-2nc" id="i5O-F2-dhv"/>
+                <outlet property="mealTypeLbl" destination="yBO-L3-dg7" id="PKb-qU-MdM"/>
+                <outlet property="preOrderBtn" destination="LcV-g5-8j3" id="Hxg-aD-Kuc"/>
+                <outlet property="price" destination="u1g-0M-RwM" id="eEA-hX-zq9"/>
+                <outlet property="ratingBtn" destination="LY0-T5-v5d" id="DEJ-jw-f12"/>
+                <outlet property="ratingLbl" destination="fDb-gm-cgS" id="FS5-KI-ikn"/>
+                <outlet property="restName" destination="twM-mY-Sw8" id="Qio-k7-nVj"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="131.91964285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star" width="16" height="16"/>
+    </resources>
+</document>

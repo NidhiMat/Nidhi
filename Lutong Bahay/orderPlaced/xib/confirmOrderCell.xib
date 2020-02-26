@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cabin-Bold.ttf">
+            <string>Cabin-Bold</string>
+        </array>
+        <array key="SourceSansPro-Regular.otf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+        <array key="SourceSansPro-Semibold.otf">
+            <string>SourceSansPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell_ConformOrder" rowHeight="212" id="KGk-i7-Jjw" customClass="confirmOrderCell" customModule="Lutong_Bahay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="538" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="538" height="154"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7H-Z7-BBB" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="538" height="102"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pork Adobo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY4-me-gGL" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="62" y="15" width="70" height="18"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8C-tM-XIX" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="139.5" y="21" width="14" height="10.5"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="8"/>
+                                <color key="textColor" red="0.92549019607843142" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bm2-UM-ckU" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="480" y="16" width="33" height="15.5"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax1-q9-FRC" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="62" y="42" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="cWf-fX-1cG"/>
+                                    <constraint firstAttribute="height" constant="16" id="k6s-oL-xsO"/>
+                                </constraints>
+                                <state key="normal" image="right"/>
+                                <state key="selected" image="right" backgroundImage="Rectangle Yellow"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VC7-LG-LOW" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="86" y="43" width="60" height="15.5"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEW-jA-dAN" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="62" y="67" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="Pog-bc-FWq"/>
+                                    <constraint firstAttribute="height" constant="16" id="or4-O3-iav"/>
+                                </constraints>
+                                <state key="normal" image="right"/>
+                                <state key="selected" image="right" backgroundImage="Rectangle Yellow"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Pick Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL6-cO-tRg" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="86" y="65.5" width="57" height="15.5"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBx-uu-b1J" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="24" y="13" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="pzg-g4-MP1"/>
+                                    <constraint firstAttribute="height" constant="22" id="wkn-lt-vaa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cabin-Bold" family="Cabin" pointSize="10"/>
+                                <state key="normal" title="1x">
+                                    <color key="titleColor" red="0.92549019610000005" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SL6-cO-tRg" firstAttribute="top" secondItem="VC7-LG-LOW" secondAttribute="bottom" constant="7" id="02c-Pr-Cyp"/>
+                            <constraint firstItem="F8C-tM-XIX" firstAttribute="firstBaseline" secondItem="KY4-me-gGL" secondAttribute="firstBaseline" id="3Vo-K7-lew"/>
+                            <constraint firstItem="Bm2-UM-ckU" firstAttribute="bottom" secondItem="F8C-tM-XIX" secondAttribute="bottom" id="5wL-W1-IsI"/>
+                            <constraint firstItem="ax1-q9-FRC" firstAttribute="leading" secondItem="N7H-Z7-BBB" secondAttribute="leading" constant="62" id="Fsp-BC-AvY"/>
+                            <constraint firstItem="uBx-uu-b1J" firstAttribute="leading" secondItem="N7H-Z7-BBB" secondAttribute="leading" constant="24" id="FuZ-50-VCu"/>
+                            <constraint firstItem="ax1-q9-FRC" firstAttribute="top" secondItem="KY4-me-gGL" secondAttribute="bottom" constant="9" id="Hod-oB-od4"/>
+                            <constraint firstItem="gEW-jA-dAN" firstAttribute="leading" secondItem="N7H-Z7-BBB" secondAttribute="leading" constant="62" id="Jub-bu-Ofl"/>
+                            <constraint firstItem="gEW-jA-dAN" firstAttribute="top" secondItem="ax1-q9-FRC" secondAttribute="bottom" constant="9" id="S3n-XS-Ta9"/>
+                            <constraint firstItem="KY4-me-gGL" firstAttribute="leading" secondItem="ax1-q9-FRC" secondAttribute="leading" id="U6a-62-px4"/>
+                            <constraint firstItem="KY4-me-gGL" firstAttribute="centerY" secondItem="uBx-uu-b1J" secondAttribute="centerY" id="XRH-J9-100"/>
+                            <constraint firstItem="F8C-tM-XIX" firstAttribute="leading" secondItem="KY4-me-gGL" secondAttribute="trailing" constant="7.5" id="aGW-7A-90x"/>
+                            <constraint firstItem="VC7-LG-LOW" firstAttribute="leading" secondItem="ax1-q9-FRC" secondAttribute="trailing" constant="8" id="ekj-FK-9v8"/>
+                            <constraint firstItem="SL6-cO-tRg" firstAttribute="leading" secondItem="gEW-jA-dAN" secondAttribute="trailing" constant="8" id="fs4-7q-J45"/>
+                            <constraint firstAttribute="trailing" secondItem="Bm2-UM-ckU" secondAttribute="trailing" constant="25" id="iWz-tb-0Ip"/>
+                            <constraint firstAttribute="height" constant="102" id="mpg-af-QMS"/>
+                            <constraint firstItem="uBx-uu-b1J" firstAttribute="top" secondItem="N7H-Z7-BBB" secondAttribute="top" constant="13" id="uaI-Cc-oxu"/>
+                            <constraint firstItem="VC7-LG-LOW" firstAttribute="top" secondItem="KY4-me-gGL" secondAttribute="bottom" constant="10" id="xeV-OH-MeC"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6s-kb-eh1">
+                        <rect key="frame" x="0.0" y="103" width="538" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal (estimated)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHw-OJ-QE9" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="24" y="9.5" width="102.5" height="16"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovz-5N-Rmb" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="480" y="9.5" width="33" height="16"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Fees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvC-Hs-lys" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="24" y="25.5" width="66.5" height="16"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYp-Pz-TeM" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                <rect key="frame" x="486" y="25.5" width="27" height="16"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xHw-OJ-QE9" firstAttribute="leading" secondItem="m6s-kb-eh1" secondAttribute="leading" constant="24" id="4Hl-W4-J6f"/>
+                            <constraint firstItem="ovz-5N-Rmb" firstAttribute="centerY" secondItem="xHw-OJ-QE9" secondAttribute="centerY" id="Jhn-Sa-YOw"/>
+                            <constraint firstAttribute="bottom" secondItem="RYp-Pz-TeM" secondAttribute="bottom" constant="8.5" id="K6e-cx-ebk"/>
+                            <constraint firstItem="xHw-OJ-QE9" firstAttribute="top" secondItem="m6s-kb-eh1" secondAttribute="top" constant="9.5" id="L3l-ZZ-Ufb"/>
+                            <constraint firstAttribute="trailing" secondItem="RYp-Pz-TeM" secondAttribute="trailing" constant="25" id="OWs-vd-oCn"/>
+                            <constraint firstItem="uvC-Hs-lys" firstAttribute="top" secondItem="xHw-OJ-QE9" secondAttribute="bottom" id="Wvr-lH-rzw"/>
+                            <constraint firstAttribute="trailing" secondItem="ovz-5N-Rmb" secondAttribute="trailing" constant="25" id="gS2-NN-UiT"/>
+                            <constraint firstItem="RYp-Pz-TeM" firstAttribute="centerY" secondItem="uvC-Hs-lys" secondAttribute="centerY" id="jYf-rE-X44"/>
+                            <constraint firstItem="uvC-Hs-lys" firstAttribute="leading" secondItem="m6s-kb-eh1" secondAttribute="leading" constant="24" id="yhW-Tv-9jw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="N7H-Z7-BBB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1sK-8X-fPZ"/>
+                    <constraint firstAttribute="trailing" secondItem="N7H-Z7-BBB" secondAttribute="trailing" id="KL4-6s-Bi1"/>
+                    <constraint firstAttribute="bottom" secondItem="m6s-kb-eh1" secondAttribute="bottom" constant="1" id="Rvf-rM-uKJ"/>
+                    <constraint firstAttribute="trailing" secondItem="m6s-kb-eh1" secondAttribute="trailing" id="del-u6-3hm"/>
+                    <constraint firstItem="m6s-kb-eh1" firstAttribute="top" secondItem="N7H-Z7-BBB" secondAttribute="bottom" constant="1" id="epN-01-x2H"/>
+                    <constraint firstItem="N7H-Z7-BBB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="j4l-9b-QcV"/>
+                    <constraint firstItem="m6s-kb-eh1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xvp-ar-cSd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDelivery" destination="ax1-q9-FRC" id="Muy-Co-HPj"/>
+                <outlet property="btnPickUp" destination="gEW-jA-dAN" id="TUS-4s-mss"/>
+            </connections>
+            <point key="canvasLocation" x="286.95652173913044" y="141.96428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle Yellow" width="16" height="16"/>
+        <image name="right" width="11" height="8"/>
+    </resources>
+</document>

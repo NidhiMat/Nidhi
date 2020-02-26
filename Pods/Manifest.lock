@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.9.1)
+  - SDWebImage (5.4.1):
+    - SDWebImage/Core (= 5.4.1)
+  - SDWebImage/Core (5.4.1)
+  - YangMingShan (2.0.1):
+    - YangMingShan/YMSPhotoPicker (= 2.0.1)
+  - YangMingShan/YMSPhotoPicker (2.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - SDWebImage
+  - YangMingShan
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SDWebImage
+    - YangMingShan
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  SDWebImage: 29c340dbdcef342bb13125553f4e19ce056b07a7
+  YangMingShan: 561cfbb769e8cf679d3f23d8ae7030402ddb6495
+
+PODFILE CHECKSUM: 12e355ebba1dd90e8aaf1d6006d88f842a8a658e
+
+COCOAPODS: 1.8.4

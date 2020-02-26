@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FcC-Ad-hN8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.otf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Regular.otf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+        <array key="SourceSansPro-Semibold.otf">
+            <string>SourceSansPro-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome Screen View Controller-->
+        <scene sceneID="HIn-lq-VO6">
+            <objects>
+                <viewController storyboardIdentifier="VC_WelcomeScreen" id="jx5-cl-CSR" customClass="LBWelcomeScreenViewController" customModule="Lutong_Bahay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QOB-fn-WEb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ag-Kd-Lkf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kare Kare" translatesAutoresizingMaskIntoConstraints="NO" id="8j0-Tj-Va6" customClass="LBImageView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="39" width="414" height="857"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5y-lH-s7t" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <color key="backgroundColor" red="0.62745098039215685" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="ZRg-Ci-zDN"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lutong Bahay logo 2" translatesAutoresizingMaskIntoConstraints="NO" id="hA3-PO-lag" customClass="LBImageView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="27" y="286" width="363" height="324"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="324" id="y4e-Oy-kLN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HY8-6a-B8A" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="737" width="414" height="159"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See what's cooking at Lutong Bahay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPD-wI-dBW" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="48" y="23" width="279" height="20"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzT-8O-9ZJ" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="46" y="60" width="323" height="48"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="country flag" translatesAutoresizingMaskIntoConstraints="NO" id="5Rc-by-nzC" customClass="LBImageView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                        <rect key="frame" x="14" y="16" width="24" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="PKx-17-v0y"/>
+                                                            <constraint firstAttribute="height" constant="16" id="xml-zo-2vw"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+63" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeC-L8-RJK" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                        <rect key="frame" x="46" y="14" width="29.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Mobile Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2sJ-NO-o67" customClass="LBTextField" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                        <rect key="frame" x="85.5" y="14" width="186.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aA-3N-EV7" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                        <rect key="frame" x="85.5" y="4" width="186.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="U16-lk-48y"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="btnNext:" destination="jx5-cl-CSR" eventType="touchUpInside" id="T13-st-8j3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="2lx-1X-bR0"/>
+                                                    <constraint firstItem="3aA-3N-EV7" firstAttribute="trailing" secondItem="2sJ-NO-o67" secondAttribute="trailing" id="786-Jc-DjG"/>
+                                                    <constraint firstItem="5Rc-by-nzC" firstAttribute="leading" secondItem="BzT-8O-9ZJ" secondAttribute="leading" constant="14" id="R6K-nG-nDk"/>
+                                                    <constraint firstItem="5Rc-by-nzC" firstAttribute="centerY" secondItem="BzT-8O-9ZJ" secondAttribute="centerY" id="h6T-Nt-wHJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2sJ-NO-o67" secondAttribute="trailing" constant="51" id="j5A-R0-JVi"/>
+                                                    <constraint firstItem="2sJ-NO-o67" firstAttribute="leading" secondItem="FeC-L8-RJK" secondAttribute="trailing" constant="10" id="nzd-d8-68C"/>
+                                                    <constraint firstItem="3aA-3N-EV7" firstAttribute="centerY" secondItem="2sJ-NO-o67" secondAttribute="centerY" id="wKN-Rb-fhZ"/>
+                                                    <constraint firstItem="FeC-L8-RJK" firstAttribute="centerY" secondItem="5Rc-by-nzC" secondAttribute="centerY" id="xCM-Oy-MzH"/>
+                                                    <constraint firstItem="FeC-L8-RJK" firstAttribute="leading" secondItem="5Rc-by-nzC" secondAttribute="trailing" constant="8" id="xEP-7o-rDd"/>
+                                                    <constraint firstItem="2sJ-NO-o67" firstAttribute="centerY" secondItem="FeC-L8-RJK" secondAttribute="centerY" id="xzS-Ui-6RG"/>
+                                                    <constraint firstItem="3aA-3N-EV7" firstAttribute="leading" secondItem="2sJ-NO-o67" secondAttribute="leading" id="yIZ-wy-SDQ"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQg-YD-TMv" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="41" y="123" width="57" height="24"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="10"/>
+                                                <state key="normal" title="Skip for now">
+                                                    <color key="titleColor" red="1" green="0.52156862749999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnSkip:" destination="jx5-cl-CSR" eventType="touchUpInside" id="zeo-oj-WRP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="IQg-YD-TMv" firstAttribute="leading" secondItem="HY8-6a-B8A" secondAttribute="leading" constant="41" id="3jV-j5-tWG"/>
+                                            <constraint firstAttribute="height" constant="159" id="9qQ-oK-bzi"/>
+                                            <constraint firstItem="BzT-8O-9ZJ" firstAttribute="leading" secondItem="HY8-6a-B8A" secondAttribute="leading" constant="46" id="CgU-TX-kgb"/>
+                                            <constraint firstItem="BzT-8O-9ZJ" firstAttribute="top" secondItem="BPD-wI-dBW" secondAttribute="bottom" constant="17" id="HVv-sG-hTo"/>
+                                            <constraint firstItem="BPD-wI-dBW" firstAttribute="top" secondItem="HY8-6a-B8A" secondAttribute="top" constant="23" id="hCb-aC-HXx"/>
+                                            <constraint firstAttribute="trailing" secondItem="BzT-8O-9ZJ" secondAttribute="trailing" constant="45" id="jIZ-Rd-fHA"/>
+                                            <constraint firstItem="BPD-wI-dBW" firstAttribute="leading" secondItem="HY8-6a-B8A" secondAttribute="leading" constant="48" id="vMl-f2-yz8"/>
+                                            <constraint firstItem="IQg-YD-TMv" firstAttribute="top" secondItem="BzT-8O-9ZJ" secondAttribute="bottom" constant="15" id="yUE-xq-cb4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="I5y-lH-s7t" firstAttribute="leading" secondItem="9Ag-Kd-Lkf" secondAttribute="leading" id="2Zc-XC-ehK"/>
+                                    <constraint firstAttribute="trailing" secondItem="HY8-6a-B8A" secondAttribute="trailing" id="AEI-Ij-hlC"/>
+                                    <constraint firstItem="8j0-Tj-Va6" firstAttribute="top" secondItem="I5y-lH-s7t" secondAttribute="bottom" constant="-5" id="DHg-fF-6D6"/>
+                                    <constraint firstItem="I5y-lH-s7t" firstAttribute="top" secondItem="9Ag-Kd-Lkf" secondAttribute="top" id="W6g-25-wov"/>
+                                    <constraint firstAttribute="trailing" secondItem="hA3-PO-lag" secondAttribute="trailing" constant="24" id="be9-G5-meV"/>
+                                    <constraint firstAttribute="bottom" secondItem="HY8-6a-B8A" secondAttribute="bottom" id="cvg-Bt-xPC"/>
+                                    <constraint firstAttribute="trailing" secondItem="8j0-Tj-Va6" secondAttribute="trailing" id="fGL-MC-Ya1"/>
+                                    <constraint firstItem="HY8-6a-B8A" firstAttribute="leading" secondItem="9Ag-Kd-Lkf" secondAttribute="leading" id="klt-Nz-JKc"/>
+                                    <constraint firstItem="hA3-PO-lag" firstAttribute="centerY" secondItem="9Ag-Kd-Lkf" secondAttribute="centerY" id="mvQ-uq-QWY"/>
+                                    <constraint firstAttribute="trailing" secondItem="I5y-lH-s7t" secondAttribute="trailing" id="oSY-zn-rtd"/>
+                                    <constraint firstItem="hA3-PO-lag" firstAttribute="leading" secondItem="9Ag-Kd-Lkf" secondAttribute="leading" constant="27" id="p5J-U5-xUs"/>
+                                    <constraint firstItem="8j0-Tj-Va6" firstAttribute="leading" secondItem="9Ag-Kd-Lkf" secondAttribute="leading" id="wvT-H8-4gf"/>
+                                    <constraint firstAttribute="bottom" secondItem="8j0-Tj-Va6" secondAttribute="bottom" id="zhj-0R-XeF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3ef-hf-WtU" firstAttribute="trailing" secondItem="9Ag-Kd-Lkf" secondAttribute="trailing" id="7EX-cB-Meh"/>
+                            <constraint firstItem="9Ag-Kd-Lkf" firstAttribute="leading" secondItem="3ef-hf-WtU" secondAttribute="leading" id="CnE-MS-uJP"/>
+                            <constraint firstAttribute="bottom" secondItem="9Ag-Kd-Lkf" secondAttribute="bottom" id="fEm-jD-Kz7"/>
+                            <constraint firstItem="9Ag-Kd-Lkf" firstAttribute="top" secondItem="QOB-fn-WEb" secondAttribute="top" id="i2F-r7-Tyv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3ef-hf-WtU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mAK-xX-5JO"/>
+                    <connections>
+                        <outlet property="imgCountryFlag" destination="5Rc-by-nzC" id="rUd-RF-Z8L"/>
+                        <outlet property="lblCountryCode" destination="FeC-L8-RJK" id="R8h-kN-P4E"/>
+                        <outlet property="tfMobileNumber" destination="2sJ-NO-o67" id="6AW-HP-rrT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2F-Z7-Vxe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2391.304347826087" y="16.741071428571427"/>
+        </scene>
+        <!--Registeration View Controller-->
+        <scene sceneID="dg7-qg-D3d">
+            <objects>
+                <viewController storyboardIdentifier="VC_Registration" id="nRe-33-RQW" customClass="LBRegisterationViewController" customModule="Lutong_Bahay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RgV-m7-FW2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQA-kl-sbB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lu6-Gc-vzU" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="68" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="GEO-Y6-jVz"/>
+                                            <constraint firstAttribute="width" constant="40" id="sy3-zO-5wZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="close"/>
+                                        <connections>
+                                            <action selector="btnBack:" destination="nRe-33-RQW" eventType="touchUpInside" id="d5Y-q5-nfW"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your maobile number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtG-pC-X6T" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="156" width="194" height="19"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Qr-yO-miB" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="46" y="204" width="323" height="48"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="country flag" translatesAutoresizingMaskIntoConstraints="NO" id="btT-nc-bEF" customClass="LBImageView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="14" y="16" width="24" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="biJ-C3-sxX"/>
+                                                    <constraint firstAttribute="width" constant="24" id="hwo-UK-QNg"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+63" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2t-Ol-4cv" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="46" y="14" width="29.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lhv-v7-8uE" customClass="LBTextField" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="85.5" y="14" width="227.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="X2t-Ol-4cv" firstAttribute="centerY" secondItem="btT-nc-bEF" secondAttribute="centerY" id="5q9-Cj-d2l"/>
+                                            <constraint firstItem="btT-nc-bEF" firstAttribute="centerY" secondItem="2Qr-yO-miB" secondAttribute="centerY" id="74y-cc-fT8"/>
+                                            <constraint firstItem="btT-nc-bEF" firstAttribute="leading" secondItem="2Qr-yO-miB" secondAttribute="leading" constant="14" id="Flz-c8-LIo"/>
+                                            <constraint firstItem="Lhv-v7-8uE" firstAttribute="leading" secondItem="X2t-Ol-4cv" secondAttribute="trailing" constant="10" id="Hgt-1D-odB"/>
+                                            <constraint firstItem="Lhv-v7-8uE" firstAttribute="centerY" secondItem="X2t-Ol-4cv" secondAttribute="centerY" id="SLe-nH-SfU"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lhv-v7-8uE" secondAttribute="trailing" constant="10" id="edn-gg-O6g"/>
+                                            <constraint firstAttribute="height" constant="48" id="f81-VT-NwY"/>
+                                            <constraint firstItem="X2t-Ol-4cv" firstAttribute="leading" secondItem="btT-nc-bEF" secondAttribute="trailing" constant="8" id="fML-iD-DS3"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5u-01-mVF" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="46" y="496" width="323" height="48"/>
+                                        <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="sk5-pt-xT8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="14"/>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnNext:" destination="nRe-33-RQW" eventType="touchUpInside" id="ss3-xk-Upk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzt-cD-3Lj">
+                                        <rect key="frame" x="246" y="73" width="166" height="30"/>
+                                        <state key="normal" title="order Placed storyboard"/>
+                                        <connections>
+                                            <action selector="btnOrderPlacedStoryBoard:" destination="nRe-33-RQW" eventType="touchUpInside" id="u5g-2s-WMm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="dtG-pC-X6T" firstAttribute="leading" secondItem="nQA-kl-sbB" secondAttribute="leading" constant="48" id="8NV-xr-Obg"/>
+                                    <constraint firstItem="b5u-01-mVF" firstAttribute="leading" secondItem="nQA-kl-sbB" secondAttribute="leading" constant="46" id="As2-pu-lyq"/>
+                                    <constraint firstItem="Lu6-Gc-vzU" firstAttribute="leading" secondItem="nQA-kl-sbB" secondAttribute="leading" constant="24" id="BeY-RG-3r4"/>
+                                    <constraint firstItem="b5u-01-mVF" firstAttribute="top" secondItem="2Qr-yO-miB" secondAttribute="bottom" constant="244" id="PMz-bh-T63"/>
+                                    <constraint firstItem="2Qr-yO-miB" firstAttribute="leading" secondItem="nQA-kl-sbB" secondAttribute="leading" constant="46" id="UXT-Dv-oVa"/>
+                                    <constraint firstItem="dtG-pC-X6T" firstAttribute="top" secondItem="Lu6-Gc-vzU" secondAttribute="bottom" constant="48" id="ZTb-bU-x4j"/>
+                                    <constraint firstItem="2Qr-yO-miB" firstAttribute="top" secondItem="dtG-pC-X6T" secondAttribute="bottom" constant="29" id="bX9-9A-QKn"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kzt-cD-3Lj" secondAttribute="trailing" constant="2" id="i2E-hf-Hsh"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Qr-yO-miB" secondAttribute="trailing" constant="45" id="rFz-PZ-sEr"/>
+                                    <constraint firstItem="Lu6-Gc-vzU" firstAttribute="top" secondItem="nQA-kl-sbB" secondAttribute="top" constant="68" id="rIJ-Ao-dO6"/>
+                                    <constraint firstItem="Kzt-cD-3Lj" firstAttribute="centerY" secondItem="Lu6-Gc-vzU" secondAttribute="centerY" id="rRq-Eq-7Eo"/>
+                                    <constraint firstAttribute="trailing" secondItem="b5u-01-mVF" secondAttribute="trailing" constant="45" id="w2o-5J-vAG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nQA-kl-sbB" firstAttribute="top" secondItem="RgV-m7-FW2" secondAttribute="top" id="L7D-AJ-DNb"/>
+                            <constraint firstItem="QQk-GV-F9f" firstAttribute="bottom" secondItem="nQA-kl-sbB" secondAttribute="bottom" id="Y4J-kp-s8K"/>
+                            <constraint firstItem="QQk-GV-F9f" firstAttribute="trailing" secondItem="nQA-kl-sbB" secondAttribute="trailing" id="cNE-FN-ppB"/>
+                            <constraint firstItem="nQA-kl-sbB" firstAttribute="leading" secondItem="QQk-GV-F9f" secondAttribute="leading" id="fGE-Xp-GbD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QQk-GV-F9f"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fNT-fx-alT"/>
+                    <connections>
+                        <outlet property="imgCountryFlag" destination="btT-nc-bEF" id="iY0-Pf-cPt"/>
+                        <outlet property="lblCountryCode" destination="X2t-Ol-4cv" id="0Ru-oX-L4g"/>
+                        <outlet property="tfMobileNumber" destination="Lhv-v7-8uE" id="sSv-zo-tqe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PZo-Zs-0t6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3266.666666666667" y="16.741071428571427"/>
+        </scene>
+        <!--Privacy Policy View Controller-->
+        <scene sceneID="Bj0-GE-Wsh">
+            <objects>
+                <viewController storyboardIdentifier="VC_PrivacyPolicy" id="CdC-Lo-dBv" customClass="LBPrivacyPolicyViewController" customModule="Lutong_Bahay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oEY-4G-bPp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pU-yx-S7V">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ls-OK-QwD" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="68" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="4CZ-qE-CUM"/>
+                                            <constraint firstAttribute="height" constant="40" id="p4N-7b-tLD"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="close"/>
+                                        <connections>
+                                            <action selector="btnBack:" destination="CdC-Lo-dBv" eventType="touchUpInside" id="GjP-8v-mH9"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="VSK-v1-BHj" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="45" y="249" width="324" height="33.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">By continuing, you agree to the Terms of Use
+and Privacy Policy of Lutong Bahay.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Privacy Policy" translatesAutoresizingMaskIntoConstraints="NO" id="Gsm-kh-tbE" customClass="LBImageView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="67" y="327.5" width="280" height="280"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJj-tU-Ze5" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="46" y="763" width="323" height="48"/>
+                                        <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="6wQ-sB-K64"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="14"/>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnNext:" destination="CdC-Lo-dBv" eventType="touchUpInside" id="Ap2-8Q-Isv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="7Ls-OK-QwD" firstAttribute="top" secondItem="4pU-yx-S7V" secondAttribute="top" constant="68" id="3On-q2-3Sl"/>
+                                    <constraint firstItem="7Ls-OK-QwD" firstAttribute="leading" secondItem="4pU-yx-S7V" secondAttribute="leading" constant="24" id="IZW-MD-2Nx"/>
+                                    <constraint firstItem="VSK-v1-BHj" firstAttribute="leading" secondItem="4pU-yx-S7V" secondAttribute="leading" constant="45" id="NTw-3f-vlc"/>
+                                    <constraint firstAttribute="trailing" secondItem="oJj-tU-Ze5" secondAttribute="trailing" constant="45" id="O1J-sy-75E"/>
+                                    <constraint firstItem="oJj-tU-Ze5" firstAttribute="leading" secondItem="4pU-yx-S7V" secondAttribute="leading" constant="46" id="T61-Yc-i0q"/>
+                                    <constraint firstAttribute="bottom" secondItem="oJj-tU-Ze5" secondAttribute="bottom" constant="51" id="XOd-De-zxi"/>
+                                    <constraint firstAttribute="trailing" secondItem="VSK-v1-BHj" secondAttribute="trailing" constant="45" id="ZgZ-t4-K31"/>
+                                    <constraint firstItem="Gsm-kh-tbE" firstAttribute="top" secondItem="VSK-v1-BHj" secondAttribute="bottom" constant="45" id="gLj-Tb-agC"/>
+                                    <constraint firstItem="VSK-v1-BHj" firstAttribute="top" secondItem="7Ls-OK-QwD" secondAttribute="bottom" constant="141" id="oWM-bs-pxo"/>
+                                    <constraint firstItem="Gsm-kh-tbE" firstAttribute="centerX" secondItem="4pU-yx-S7V" secondAttribute="centerX" id="zDF-z3-T4Q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4pU-yx-S7V" firstAttribute="leading" secondItem="YRG-iJ-PQo" secondAttribute="leading" id="qw2-wL-MVj"/>
+                            <constraint firstItem="4pU-yx-S7V" firstAttribute="trailing" secondItem="YRG-iJ-PQo" secondAttribute="trailing" id="uQL-HL-fgu"/>
+                            <constraint firstItem="4pU-yx-S7V" firstAttribute="top" secondItem="oEY-4G-bPp" secondAttribute="top" id="x92-wU-LLz"/>
+                            <constraint firstItem="YRG-iJ-PQo" firstAttribute="bottom" secondItem="4pU-yx-S7V" secondAttribute="bottom" id="xcc-wV-cgI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YRG-iJ-PQo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5f4-7h-D7F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgd-xd-nH6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4097.1014492753629" y="16.741071428571427"/>
+        </scene>
+        <!--Search Location View Controller-->
+        <scene sceneID="edO-R0-wc2">
+            <objects>
+                <viewController storyboardIdentifier="VC_SearchLocation" id="DHB-hH-zy8" customClass="LBSearchLocationViewController" customModule="Lutong_Bahay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wUb-MA-fCf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIf-Cg-9Af">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apk-Ux-dyc" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="68" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="4mL-qV-WTz"/>
+                                            <constraint firstAttribute="height" constant="40" id="pnJ-JU-gwU"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="close"/>
+                                        <connections>
+                                            <action selector="btnBack:" destination="DHB-hH-zy8" eventType="touchUpInside" id="b37-ne-qe7"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFt-rl-JR8" customClass="LBView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="45" y="151" width="324" height="48"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search 2" translatesAutoresizingMaskIntoConstraints="NO" id="LkX-ux-guk" customClass="LBImageView" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="16" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="Aij-Jr-ha9"/>
+                                                    <constraint firstAttribute="width" constant="16" id="jaU-62-ghA"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Szg-an-p7Y" customClass="LBTextField" customModule="Lutong_Bahay" customModuleProvider="target">
+                                                <rect key="frame" x="50" y="0.0" width="264" height="48"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Szg-an-p7Y" firstAttribute="leading" secondItem="LkX-ux-guk" secondAttribute="trailing" constant="10" id="2z1-eb-SKo"/>
+                                            <constraint firstAttribute="trailing" secondItem="Szg-an-p7Y" secondAttribute="trailing" constant="10" id="9Jc-4u-CgM"/>
+                                            <constraint firstItem="Szg-an-p7Y" firstAttribute="top" secondItem="RFt-rl-JR8" secondAttribute="top" id="9tq-Jc-vg1"/>
+                                            <constraint firstItem="LkX-ux-guk" firstAttribute="leading" secondItem="RFt-rl-JR8" secondAttribute="leading" constant="24" id="Ec1-f7-nuA"/>
+                                            <constraint firstAttribute="bottom" secondItem="Szg-an-p7Y" secondAttribute="bottom" id="Tl4-jq-cFl"/>
+                                            <constraint firstItem="LkX-ux-guk" firstAttribute="centerY" secondItem="RFt-rl-JR8" secondAttribute="centerY" id="gTV-W9-pY6"/>
+                                            <constraint firstAttribute="height" constant="48" id="sPu-Hn-5D1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mJW-Sl-FQ9">
+                                        <rect key="frame" x="0.0" y="212" width="414" height="505"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="lEJ-Lh-9Bp">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="92"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lEJ-Lh-9Bp" id="lh0-Uq-xNN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="DHB-hH-zy8" id="1nk-AW-ZTq"/>
+                                            <outlet property="delegate" destination="DHB-hH-zy8" id="VZP-Be-Xc4"/>
+                                        </connections>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixB-Ur-VWq" customClass="LBLabel" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="104" y="722" width="207" height="23"/>
+                                        <string key="text">Available dishes are only within a 3km radius
+from your address at the moment.</string>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="9"/>
+                                        <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkB-wp-ptE" customClass="LBButton" customModule="Lutong_Bahay" customModuleProvider="target">
+                                        <rect key="frame" x="46" y="763" width="323" height="48"/>
+                                        <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="DyJ-LG-BVc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="14"/>
+                                        <state key="normal" title="USE THIS ADDRESS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnUseThisAddress:" destination="DHB-hH-zy8" eventType="touchUpInside" id="poe-7c-ADD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="RFt-rl-JR8" firstAttribute="leading" secondItem="QIf-Cg-9Af" secondAttribute="leading" constant="45" id="164-Q1-dIR"/>
+                                    <constraint firstItem="mJW-Sl-FQ9" firstAttribute="leading" secondItem="QIf-Cg-9Af" secondAttribute="leading" id="55h-da-9Fz"/>
+                                    <constraint firstItem="ixB-Ur-VWq" firstAttribute="leading" secondItem="QIf-Cg-9Af" secondAttribute="leading" constant="104" id="6vg-Dt-8n1"/>
+                                    <constraint firstAttribute="trailing" secondItem="YkB-wp-ptE" secondAttribute="trailing" constant="45" id="76y-P1-loa"/>
+                                    <constraint firstItem="apk-Ux-dyc" firstAttribute="leading" secondItem="QIf-Cg-9Af" secondAttribute="leading" constant="24" id="B6O-hQ-O8h"/>
+                                    <constraint firstItem="YkB-wp-ptE" firstAttribute="top" secondItem="ixB-Ur-VWq" secondAttribute="bottom" constant="18" id="Dch-Ot-6ty"/>
+                                    <constraint firstItem="apk-Ux-dyc" firstAttribute="top" secondItem="QIf-Cg-9Af" secondAttribute="top" constant="68" id="LLl-dO-wcn"/>
+                                    <constraint firstAttribute="trailing" secondItem="ixB-Ur-VWq" secondAttribute="trailing" constant="103" id="LyS-wf-LUf"/>
+                                    <constraint firstAttribute="trailing" secondItem="mJW-Sl-FQ9" secondAttribute="trailing" id="MvO-mE-TLt"/>
+                                    <constraint firstAttribute="trailing" secondItem="RFt-rl-JR8" secondAttribute="trailing" constant="45" id="NfY-Tg-QBj"/>
+                                    <constraint firstAttribute="bottom" secondItem="YkB-wp-ptE" secondAttribute="bottom" constant="51" id="Q9z-Xh-byK"/>
+                                    <constraint firstItem="RFt-rl-JR8" firstAttribute="top" secondItem="apk-Ux-dyc" secondAttribute="bottom" constant="43" id="UP4-Of-pdb"/>
+                                    <constraint firstItem="mJW-Sl-FQ9" firstAttribute="top" secondItem="RFt-rl-JR8" secondAttribute="bottom" constant="13" id="bo9-db-tTC"/>
+                                    <constraint firstItem="ixB-Ur-VWq" firstAttribute="top" secondItem="mJW-Sl-FQ9" secondAttribute="bottom" constant="5" id="cVk-H3-F5Y"/>
+                                    <constraint firstItem="YkB-wp-ptE" firstAttribute="leading" secondItem="QIf-Cg-9Af" secondAttribute="leading" constant="46" id="uXR-71-IA6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eQw-qt-c1h" firstAttribute="bottom" secondItem="QIf-Cg-9Af" secondAttribute="bottom" id="Gkw-3U-Y2a"/>
+                            <constraint firstItem="eQw-qt-c1h" firstAttribute="trailing" secondItem="QIf-Cg-9Af" secondAttribute="trailing" id="Pls-7A-7X4"/>
+                            <constraint firstItem="QIf-Cg-9Af" firstAttribute="top" secondItem="wUb-MA-fCf" secondAttribute="top" id="Qjd-4f-8nk"/>
+                            <constraint firstItem="QIf-Cg-9Af" firstAttribute="leading" secondItem="wUb-MA-fCf" secondAttribute="leading" id="TmK-JN-zbo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eQw-qt-c1h"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nuw-BB-Xmq"/>
+                    <connections>
+                        <outlet property="searchLocationTableView" destination="mJW-Sl-FQ9" id="g1x-rn-Fad"/>
+                        <outlet property="tfSearchBar" destination="Szg-an-p7Y" id="sxX-k4-KWz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fi-M8-XPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4939.130434782609" y="16.741071428571427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hhc-YU-XOt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="FcC-Ad-hN8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ibX-ai-vDt">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jx5-cl-CSR" kind="relationship" relationship="rootViewController" id="cFF-8L-BCx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u63-S7-4I6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481.1594202898552" y="16.741071428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Kare Kare" width="304" height="450.5"/>
+        <image name="Lutong Bahay logo 2" width="326" height="326"/>
+        <image name="Privacy Policy" width="140" height="140"/>
+        <image name="close" width="24" height="24"/>
+        <image name="country flag" width="24.5" height="16"/>
+        <image name="search 2" width="24" height="24"/>
+    </resources>
+</document>

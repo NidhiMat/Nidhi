@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-Lutong Bahay/Pods-Lutong Bahay-resources.sh
+${PODS_ROOT}/YangMingShan/YangMingShan/YMSPhotoPicker/Private/YMSAlbumCell.xib
+${PODS_ROOT}/YangMingShan/YangMingShan/YMSPhotoPicker/Private/YMSAlbumPickerViewController.xib
+${PODS_ROOT}/YangMingShan/YangMingShan/YMSPhotoPicker/Private/YMSCameraCell.xib
+${PODS_ROOT}/YangMingShan/YangMingShan/YMSPhotoPicker/Private/YMSPhotoCell.xib
+${PODS_ROOT}/YangMingShan/YangMingShan/YMSPhotoPicker/Private/YMSSinglePhotoViewController.xib
+${PODS_ROOT}/YangMingShan/YangMingShan/YMSPhotoPicker/Public/YMSPhotoPickerViewController.xib
+${PODS_ROOT}/YangMingShan/YangMingShan/YMSPhotoPicker/YMSPhotoPickerAssets.xcassets
